@@ -35,7 +35,11 @@ class ChatWithURLUsingOpenAI:
         llm = OpenAI(temperature=0.3, max_tokens=500)
         embeddings = OpenAIEmbeddings()
         chain = RetrievalQAWithSourcesChain.from_llm(
-            llm=llm, retriever=FAISS.load_local("faiss_index_urls", embeddings).as_retriever()
+            llm=llm, retriever=FAISS.load_local(
+    "faiss_index_urls",
+    embeddings,
+    allow_dangerous_deserialization=True
+).as_retriever()
         )
         result = chain.invoke({"question": query}, return_only_outputs=True)
         st.write("Reply: ", result["answer"])
