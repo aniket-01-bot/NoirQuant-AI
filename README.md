@@ -1,82 +1,139 @@
-# FinScribe : News Research Bot Using LLM
+# 🖤 NoirQuant AI
 
-## Table of Content
-  * [Demo](#demo)
-  * [Problem Statement](#problem-statement)
-  * [Approach](#approach)
-  * [Technologies Used](#technologies-used)
-  * [Installation](#installation)
-  * [Deployement](#deployement)
-  * [Detailed Project Reports](#detailed-project-reports)
-  * [Bugs & Logs](#bugs--logs)
-  * [Contributors](#contributors)
+**NoirQuant AI** is a modern financial analytics platform designed to extract intelligent insights from news articles and financial documents using AI-powered tools.
 
-## Demo
-Link: [personal-analyst.onrender.com](https://personal-analyst.onrender.com/)
+---
 
+## 🚀 Features
 
-## Screenshots
-![Screenshot](Capture.png)
-![Screenshot](Capture2.png)
-![Screenshot](Capture3.png)
+### 📰 News Analyzer
 
+* Analyze financial news articles in real-time
+* Extract key insights, trends, and sentiment
+* Helps in smarter market decision-making
 
-## Problem Statement
-#### NewsAnalyzer: Uncover Financial Insights from News Articles
+### 📄 PDF Chat Bot
 
-Equity research analysts often face challenges in efficiently extracting key insights from a vast array of financial news articles. The abundance of data requires a tool that can quickly analyze news content, provide relevant insights, and engage in a dynamic conversation to streamline the research process.
+* Upload financial PDFs
+* Ask questions in natural language
+* Get instant, accurate answers for faster research
 
-#### PDFChatBot: Extract Knowledge from Financial PDFs with Ease 
+---
 
-Equity research analysts encounter difficulties when dealing with extensive financial PDF documents. Manually extracting and interpreting information from these documents is time-consuming. There is a need for a tool that allows analysts to effortlessly upload financial PDFs, ask specific questions, and receive detailed responses through a conversational interface, facilitating quicker and more effective research.
+## 🎯 Purpose
 
-## Approach
-Document Parsing : Implement a PDF parsing mechanism to extract text content from financial PDF documents and data from website using urls.
-Handle various document structures, tables, and formats commonly found in financial reports.
+NoirQuant AI aims to simplify **financial research and analysis** by combining:
 
-Text Embeddings : Utilize pre-trained language models to generate embeddings for the extracted text.
-Choose models that capture semantic relationships and context in financial documents.
+* Natural Language Processing (NLP)
+* AI-driven summarization
+* Interactive chat-based interfaces
 
-Vector Store : Build a vector store using technologies like FAISS to index and search through document embeddings efficiently.
-Optimize for quick retrieval of relevant documents based on user queries.
+---
 
-Conversational AI : Integrate a conversational AI model that understands user questions and context within financial documents.
-Enable users to ask questions about specific sections of the document and receive accurate responses.
+## 🛠️ Tech Stack
 
-User-Friendly Interface : Develop a user-friendly interface for uploading PDFs, Uploading URLs, asking questions, and viewing responses.
-Include features for navigating through document sections and exploring related information.
+* **Frontend/UI**: Streamlit
+* **Backend**: Python
+* **AI/LLM**: LangChain, OpenAI (or other LLMs)
+* **Data Processing**: Pandas, NumPy
 
-Deployment :  Created an UI with a form that takes all the necessary inputs from user and shows the output. After that I have deployed project on render using github with versioning control.
+---
 
+## ⚙️ Installation
 
-## Technologies Used
- 
-   1. Python 
-   2. Web Scraping
-   3. Langchain
-   4. OpenAI 
-   5. Google Gemini Pro
-   6. Render cloud
-   7. PDF Parsing
-   8. Streamlit
+### 1️⃣ Clone the repository
 
-## Installation
-Click here to install [python](https://www.python.org/downloads/). To install the required packages and libraries, run this pip command in the project directory after cloning the repository:
 ```bash
-git clone https://github.com/hrishikeshkini/News-Research-Bot-Using-LLM.git
+git clone https://github.com/your-username/noirquant-ai.git
+cd noirquant-ai
+```
+
+### 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+source venv/Scripts/activate   # Windows
+# OR
+source venv/bin/activate       # Mac/Linux
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
-If pip is not already installed, Follow this [link](https://pip.pypa.io/en/stable/installation/)
 
-## Deployement
-Create a web service on render cloud servide. You can either connect your github profile to manually deploy this project or Also we can deploy our docker image.
-Follow the instruction given on [Render Documentation](https://docs.render.com/) to deploy a web app.
+---
 
-## Bugs & Logs
+## ▶️ Run the Application
 
-1. If you find a bug, kindly open an issue and it will be addressed as early as possible. [Open](https://github.com/hrishikeshkini/News-Research-Bot-Using-LLM/issues)
-2. Under localhost, logging is performed for all the actions and its stored onto logs.txt file
-3. When the app is deployed on render, logs can be viewed on  render dashboard or CLI.
+```bash
+streamlit run app.py
+```
 
-## Contributors
-  [Hrishikesh Kini](https://github.com/hrishikeshkini)
+Then open:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📂 Project Structure
+
+```
+noirquant-ai/
+│
+├── app.py                # Main Streamlit app
+├── pages/
+│   ├── URL.py           # News Analyzer module
+│   ├── PDF.py           # PDF Chat Bot module
+│
+├── utils/               # Helper functions
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 💡 Use Cases
+
+* 📊 Equity Research
+* 🧠 Financial News Analysis
+* 📄 Document Understanding
+* 📈 Investment Decision Support
+
+---
+
+## 🔮 Future Enhancements
+
+* User Authentication System
+* Dashboard with analytics charts
+* Multi-language support
+* Real-time stock API integration
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repo and submit a pull request.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Aniket Shinde**
+📧 Feel free to connect for collaboration or queries.
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub!
