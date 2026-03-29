@@ -1,4 +1,4 @@
-# 🖤 NoirQuant AI
+#  NoirQuant AI
 
 **NoirQuant AI** is a modern financial analytics platform designed to extract intelligent insights from news articles and financial documents using AI-powered tools.
 
